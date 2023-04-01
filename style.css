@@ -1,0 +1,276 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+    font-size: 0.9375rem;
+}
+
+body {
+    height: 100%;
+    line-height: calc(1em + 0.5rem);
+    background-color: hsl(216, 12%, 8%);
+    font-family: 'Overpass', sans-serif;
+}
+
+main {
+    max-width: 96rem;
+    min-height: 47.46rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-div {
+    height: 26.6rem;
+    width: 26.6rem;
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    visibility: visible;
+}
+
+.main-div .icon-container {
+    width: 2.4rem;
+    height: 2.4rem;
+    background-color: hsl(214, 15%, 22%);
+    margin-top: 2.3rem;
+    margin-left: 2.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.3rem;
+}
+
+.main-div .icon-star {
+    width: 1.1rem;
+    height: 1.1rem;
+}
+
+.main-div h1 {
+    margin-left: 2.6rem;
+    margin-top: 2.6rem;
+    color: hsl(0, 0%, 100%);
+}
+
+.main-div p {
+    white-space: pre-line;
+    margin-left: 2.6rem;
+    margin-top: 2rem;
+    color: hsl(216, 12%, 54%);
+}
+
+.main-div #numbers {
+    display: flex;
+    flex-direction: row;
+    width: 24rem;
+    margin-left: 2.6rem;
+    margin-top: 2rem;
+}
+
+#numbers .num {
+    color: hsl(216, 12%, 54%);
+    width: 3rem;
+    height: 3rem;
+    background-color: hsl(214, 15%, 22%);
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1.6rem;
+    border: none;
+}
+
+#numbers .num:hover {
+    cursor: pointer;
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    transform: scale(1.1);
+}
+
+#numbers .num:focus {
+    background-color: hsl(216, 12%, 54%);
+    color: white;
+}
+
+.main-div #submit-btn {
+    width: 21.5rem;
+    height: 3rem;
+    margin-left: 2.6rem;
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 2rem;
+    margin-top: 2rem;
+    border: none;
+    font-weight: 500;
+    letter-spacing: 0.2rem;
+}
+
+.main-div #submit-btn:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.second-div {
+    height: 26.6rem;
+    width: 26.6rem;
+    border-radius: 2rem;
+    position: absolute;
+    left: 34.7rem;
+    right: 0;
+    top: 10.5rem;
+    bottom: 0;
+    visibility: hidden;
+}
+
+.second-div .inside-div {
+    height: 26.6rem;
+    width: 26.6rem;
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.inside-div .illustration-icon {
+    width: 10rem;
+    height: 8rem;
+    margin-top: 3rem;
+    margin-left: 8rem;
+}
+
+#choose {
+    width: 13rem;
+    color: hsl(25, 97%, 53%);
+    background-color: hsl(214, 15%, 22%);
+    margin-left: 7rem;
+    margin-top: 2rem;
+    text-align: center;
+    border-radius: 1.2rem;
+}
+
+#rating {
+    font-size: 1rem;
+    color: hsl(25, 97%, 53%);
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.inside-div span {
+    color: hsl(0, 0%, 100%);
+    font-size: 1.7rem;
+    margin-left: 9rem;
+    margin-top: 2rem;
+}
+
+.inside-div p {
+    white-space: pre-line;
+    color: hsl(216, 12%, 54%);
+    margin-left: 3rem;
+    margin-top: 1rem;
+}
+
+.inside-div p .center-syntax {
+    color: hsl(216, 12%, 54%);
+    font-size: 1rem;
+    margin-left: 7.5rem;
+}
+
+@media screen and (max-width:26.6em) {
+    main {
+        max-width: 25em;
+        min-height: 40em;
+    }
+
+    .main-div {
+        height: 23.3em;
+        width: 23.3em;
+        border-radius: 1em;
+    }
+
+    .main-div .icon-container {
+        width: 2.3em;
+        height: 2.3em;
+        margin-top: 1em;
+        margin-left: 1em;
+    }
+
+    .main-div .icon-star {
+        width: .9em;
+        height: .9em;
+    }
+
+    .main-div h1 {
+        margin-left: .6em;
+        margin-top: 1.3em;
+    }
+
+    .main-div p {
+        white-space: normal;
+        margin-left: 1em;
+        margin-top: 1.8em;
+    }
+
+    .main-div #numbers {
+        width: 24em;
+        margin-left: 1em;
+        margin-top: 1em;
+    }
+
+    .main-div #submit-btn {
+        margin-left: 1em;
+        margin-top: 1.5em;
+    }
+
+    .second-div {
+        height: 23.3em;
+        width: 23.3em;
+        border-radius: 1em;
+        position: absolute;
+        left: 1em;
+        right: 0;
+        top: 8.3em;
+        bottom: 0;
+        visibility: hidden;
+    }
+
+    .second-div .inside-div {
+        height: 23.3em;
+        width: 23.3em;
+        border-radius: 1em;
+    }
+
+    .inside-div .illustration-icon {
+        width: 10em;
+        height: 8em;
+        margin-left: 6em;
+    }
+
+    #choose {
+        margin-left: 5em;
+        margin-top: 1em;
+    }
+
+    .inside-div span {
+        margin-left: 4.5em;
+        margin-top: .7em;
+    }
+
+    .inside-div p {
+        white-space: normal;
+        margin-left: 2em;
+        margin-top: .9em;
+    }
+
+    .inside-div p .center-syntax {
+        margin-left: 0;
+    }
+}
